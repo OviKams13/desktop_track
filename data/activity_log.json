@@ -46,5 +46,71 @@
         "duration": "8 sec",
         "date": "2025-06-02",
         "time": "18:42:26"
+    },
+    {
+        "event": "Visual Studio Code",
+        "duration": "12 sec",
+        "date": "2025-06-02",
+        "time": "18:47:35"
+    },
+    {
+        "event": "Task Switching",
+        "duration": "2 sec",
+        "date": "2025-06-02",
+        "time": "18:47:35"
+    },
+    {
+        "event": "X",
+        "duration": "4 sec",
+        "date": "2025-06-02",
+        "time": "18:47:35"
+    },
+    {
+        "event": "Windows PowerShell",
+        "duration": "46 sec",
+        "date": "2025-06-02",
+        "time": "18:47:35"
+    },
+    {
+        "event": "Google Chrome - chrome.exe",
+        "duration": "14 sec",
+        "date": "2025-06-02",
+        "time": "18:47:35"
+    },
+    {
+        "event": "X - chrome.exe",
+        "duration": "2 sec",
+        "date": "2025-06-02",
+        "time": "18:47:35"
+    },
+    {
+        "event": "Visual Studio Code",
+        "duration": "18 sec",
+        "date": "2025-06-02",
+        "time": "18:48:53"
+    },
+    {
+        "event": "git_activity_log.csv - WPS Office",
+        "duration": "4 sec",
+        "date": "2025-06-02",
+        "time": "18:48:53"
+    },
+    {
+        "event": "Visual Studio Code",
+        "duration": "23 sec",
+        "date": "2025-06-02",
+        "time": "18:49:52"
+    },
+    {
+        "event": "X",
+        "duration": "8 sec",
+        "date": "2025-06-02",
+        "time": "18:49:52"
+    },
+    {
+        "event": "VLC media player",
+        "duration": "4 sec",
+        "date": "2025-06-02",
+        "time": "18:49:52"
     }
 ]
