@@ -1,38 +1,50 @@
 [
     {
-        "app_name": "logger.py - Project - Visual Studio Code",
-        "duration_seconds": 8.0,
+        "event": "Visual Studio Code",
+        "duration": "30 sec",
         "date": "2025-06-02",
-        "time": "12:20:44"
+        "time": "18:42:26"
     },
     {
-        "app_name": "Task Switching",
-        "duration_seconds": 4.0,
+        "event": "X",
+        "duration": "8 sec",
         "date": "2025-06-02",
-        "time": "12:20:44"
+        "time": "18:42:26"
     },
     {
-        "app_name": "New Tab - Google Chrome",
-        "duration_seconds": 2.0,
+        "event": "WhatsApp",
+        "duration": "2 sec",
         "date": "2025-06-02",
-        "time": "12:20:44"
+        "time": "18:42:26"
     },
     {
-        "app_name": "Home / X - Google Chrome",
-        "duration_seconds": 2.0,
+        "event": "Google Chrome - chrome.exe",
+        "duration": "14 sec",
         "date": "2025-06-02",
-        "time": "12:20:44"
+        "time": "18:42:26"
     },
     {
-        "app_name": "(1) Home / X - Google Chrome",
-        "duration_seconds": 90.02,
+        "event": "Instagram - chrome.exe",
+        "duration": "1 min 34 sec",
         "date": "2025-06-02",
-        "time": "12:20:44"
+        "time": "18:42:26"
     },
     {
-        "app_name": "(1) Alexander Isak (@isakaxtra) / X - Google Chrome",
-        "duration_seconds": 14.0,
+        "event": "X - chrome.exe",
+        "duration": "30 sec",
         "date": "2025-06-02",
-        "time": "12:20:44"
+        "time": "18:42:26"
+    },
+    {
+        "event": "Program Manager",
+        "duration": "6 sec",
+        "date": "2025-06-02",
+        "time": "18:42:26"
+    },
+    {
+        "event": "Microsoft Edge - msedge.exe",
+        "duration": "8 sec",
+        "date": "2025-06-02",
+        "time": "18:42:26"
     }
 ]

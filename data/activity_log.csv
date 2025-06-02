@@ -1,7 +1,9 @@
-app_name,duration,date,time
-logger.py - Project - Visual Studio Code,8 seconds,2025-06-02,12:20:44
-Task Switching,4 seconds,2025-06-02,12:20:44
-New Tab - Google Chrome,2 seconds,2025-06-02,12:20:44
-Home / X - Google Chrome,2 seconds,2025-06-02,12:20:44
-(1) Home / X - Google Chrome,1 minute and 30 seconds,2025-06-02,12:20:44
-(1) Alexander Isak (@isakaxtra) / X - Google Chrome,14 seconds,2025-06-02,12:20:44
+event,duration,date,time
+Visual Studio Code,30 sec,2025-06-02,18:42:26
+X,8 sec,2025-06-02,18:42:26
+WhatsApp,2 sec,2025-06-02,18:42:26
+Google Chrome - chrome.exe,14 sec,2025-06-02,18:42:26
+Instagram - chrome.exe,1 min 34 sec,2025-06-02,18:42:26
+X - chrome.exe,30 sec,2025-06-02,18:42:26
+Program Manager,6 sec,2025-06-02,18:42:26
+Microsoft Edge - msedge.exe,8 sec,2025-06-02,18:42:26
