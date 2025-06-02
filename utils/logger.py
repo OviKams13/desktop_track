@@ -1,34 +1,62 @@
 import csv
 import json
 from datetime import datetime
-import os  # Ajout pour créer le dossier si nécessaire
+import os
+
+def format_duration(seconds):
+    """
+    Convertit un nombre de secondes en texte lisible.
+    """
+    seconds = int(round(seconds))
+    if seconds < 60:
+        return f"{seconds} second{'s' if seconds != 1 else ''}"
+    else:
+        minutes = seconds // 60
+        remaining_seconds = seconds % 60
+        if remaining_seconds == 0:
+            return f"{minutes} minute{'s' if minutes != 1 else ''}"
+        else:
+            return f"{minutes} minute{'s' if minutes != 1 else ''} and {remaining_seconds} second{'s' if remaining_seconds != 1 else ''}"
 
 def save_to_csv(data, filename="data/activity_log.csv"):
     """
-    Enregistre une liste de dictionnaires dans un fichier CSV.
+    Enregistre une liste de dictionnaires dans un fichier CSV en ajoutant les nouvelles entrées.
     """
-    # Crée le dossier s'il n'existe pas
     os.makedirs(os.path.dirname(filename), exist_ok=True)
-    fieldnames = data[0].keys() if data else []
+    fieldnames = ["app_name", "duration", "date", "time"]  # Updated header
+    file_exists = os.path.exists(filename)
     try:
-        with open(filename, mode='w', newline='', encoding='utf-8') as file:
+        with open(filename, mode='a', newline='', encoding='utf-8') as file:
             writer = csv.DictWriter(file, fieldnames=fieldnames)
-            writer.writeheader()
+            if not file_exists:
+                writer.writeheader()
             for row in data:
-                writer.writerow(row)
-        print(f"✅ Données sauvegardées dans {filename}")
+                writer.writerow({
+                    "app_name": row["app_name"],
+                    "duration": format_duration(row["duration_seconds"]),  # Use formatted duration
+                    "date": row["date"],
+                    "time": row["time"]
+                })
+        print(f"✅ Données ajoutées à {filename}")
     except PermissionError:
-        print(f"❌ Erreur : Le fichier {filename} est déjà ouvert dans une autre application. Veuillez le fermer et réessayer.")
+        print(f"❌ Erreur : Le fichier {filename} est déjà ouvert. Veuillez le fermer et réessayer.")
 
 def save_to_json(data, filename="data/activity_log.json"):
     """
-    Enregistre une liste de dictionnaires dans un fichier JSON.
+    Enregistre une liste de dictionnaires dans un fichier JSON en ajoutant les nouvelles entrées.
     """
-    # Crée le dossier s'il n'existe pas
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     try:
+        # Charger les anciennes données si le fichier existe
+        if os.path.exists(filename):
+            with open(filename, mode='r', encoding='utf-8') as file:
+                existing_data = json.load(file)
+        else:
+            existing_data = []
+        # Ajouter les nouvelles entrées
+        existing_data.extend(data)
         with open(filename, mode='w', encoding='utf-8') as file:
-            json.dump(data, file, indent=4)
-        print(f"✅ Données sauvegardées dans {filename}")
+            json.dump(existing_data, file, indent=4)
+        print(f"✅ Données ajoutées à {filename}")
     except PermissionError:
-        print(f"❌ Erreur : Le fichier {filename} est déjà ouvert dans une autre application. Veuillez le fermer et réessayer.")
+        print(f"❌ Erreur : Le fichier {filename} est déjà ouvert. Veuillez le fermer et réessayer.")

@@ -1,38 +1,38 @@
 [
     {
-        "app_name": "app.py - Project - Visual Studio Code",
-        "duration_seconds": 22.0,
+        "app_name": "logger.py - Project - Visual Studio Code",
+        "duration_seconds": 8.0,
         "date": "2025-06-02",
-        "time": "11:53:41"
-    },
-    {
-        "app_name": "New Tab - Google Chrome",
-        "duration_seconds": 6.0,
-        "date": "2025-06-02",
-        "time": "11:53:41"
-    },
-    {
-        "app_name": "FC Ultimate Team Web App - EA SPORTS Official Site - Google Chrome",
-        "duration_seconds": 22.0,
-        "date": "2025-06-02",
-        "time": "11:53:41"
-    },
-    {
-        "app_name": "TOTALSPORTEK - LIVE STREAMS - Google Chrome",
-        "duration_seconds": 4.0,
-        "date": "2025-06-02",
-        "time": "11:53:41"
-    },
-    {
-        "app_name": "PG.docx - WPS Office",
-        "duration_seconds": 2.0,
-        "date": "2025-06-02",
-        "time": "11:53:41"
+        "time": "12:20:44"
     },
     {
         "app_name": "Task Switching",
+        "duration_seconds": 4.0,
+        "date": "2025-06-02",
+        "time": "12:20:44"
+    },
+    {
+        "app_name": "New Tab - Google Chrome",
         "duration_seconds": 2.0,
         "date": "2025-06-02",
-        "time": "11:53:41"
+        "time": "12:20:44"
+    },
+    {
+        "app_name": "Home / X - Google Chrome",
+        "duration_seconds": 2.0,
+        "date": "2025-06-02",
+        "time": "12:20:44"
+    },
+    {
+        "app_name": "(1) Home / X - Google Chrome",
+        "duration_seconds": 90.02,
+        "date": "2025-06-02",
+        "time": "12:20:44"
+    },
+    {
+        "app_name": "(1) Alexander Isak (@isakaxtra) / X - Google Chrome",
+        "duration_seconds": 14.0,
+        "date": "2025-06-02",
+        "time": "12:20:44"
     }
 ]

@@ -8,7 +8,7 @@ if __name__ == "__main__":
     processes = get_running_processes()  # KEPT the function call but REMOVED print output
 
     print("\n🎯 Mesure du temps d'activité par application (3 minutes) :")
-    activity_times = track_active_window_time(duration=60, interval=2)  # CHANGED duration from 60 to 180
+    activity_times = track_active_window_time(duration=180, interval=2)  # CHANGED duration from 60 to 180
 
     # Prepare data for logging (ADDED logging for tracked data)
     log_entry = []
