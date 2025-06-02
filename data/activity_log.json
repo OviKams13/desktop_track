@@ -1,14 +1,38 @@
 [
     {
-        "app_name": "YouTube - Chrome",
-        "duration_seconds": 120,
-        "date": "2025-05-30",
-        "time": "15:20:10"
+        "app_name": "app.py - Project - Visual Studio Code",
+        "duration_seconds": 22.0,
+        "date": "2025-06-02",
+        "time": "11:53:41"
     },
     {
-        "app_name": "Microsoft Word",
-        "duration_seconds": 300,
-        "date": "2025-05-30",
-        "time": "15:25:40"
+        "app_name": "New Tab - Google Chrome",
+        "duration_seconds": 6.0,
+        "date": "2025-06-02",
+        "time": "11:53:41"
+    },
+    {
+        "app_name": "FC Ultimate Team Web App - EA SPORTS Official Site - Google Chrome",
+        "duration_seconds": 22.0,
+        "date": "2025-06-02",
+        "time": "11:53:41"
+    },
+    {
+        "app_name": "TOTALSPORTEK - LIVE STREAMS - Google Chrome",
+        "duration_seconds": 4.0,
+        "date": "2025-06-02",
+        "time": "11:53:41"
+    },
+    {
+        "app_name": "PG.docx - WPS Office",
+        "duration_seconds": 2.0,
+        "date": "2025-06-02",
+        "time": "11:53:41"
+    },
+    {
+        "app_name": "Task Switching",
+        "duration_seconds": 2.0,
+        "date": "2025-06-02",
+        "time": "11:53:41"
     }
 ]

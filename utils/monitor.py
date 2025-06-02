@@ -21,8 +21,6 @@ def get_running_processes():
             pass
     return processes
 
-import time
-
 def monitor_processes(duration=60, interval=5):
     """
     Surveille les processus pendant 'duration' secondes,
@@ -93,7 +91,7 @@ def monitor_specific_apps(duration=60, interval=5):
             print("📝 L'utilisateur est sur Microsoft Word")
         time.sleep(interval)
 
-def track_active_window_time(duration=60, interval=2):
+def track_active_window_time(duration=180, interval=2):  # CHANGED duration from 60 to 180
     """
     Mesure combien de temps chaque application reste active.
     duration : durée totale de la surveillance (en secondes)
