@@ -1,116 +1,62 @@
 [
     {
-        "event": "Visual Studio Code",
-        "duration": "30 sec",
-        "date": "2025-06-02",
-        "time": "18:42:26"
-    },
-    {
-        "event": "X",
-        "duration": "8 sec",
-        "date": "2025-06-02",
-        "time": "18:42:26"
-    },
-    {
-        "event": "WhatsApp",
-        "duration": "2 sec",
-        "date": "2025-06-02",
-        "time": "18:42:26"
-    },
-    {
-        "event": "Google Chrome - chrome.exe",
-        "duration": "14 sec",
-        "date": "2025-06-02",
-        "time": "18:42:26"
-    },
-    {
-        "event": "Instagram - chrome.exe",
-        "duration": "1 min 34 sec",
-        "date": "2025-06-02",
-        "time": "18:42:26"
-    },
-    {
-        "event": "X - chrome.exe",
-        "duration": "30 sec",
-        "date": "2025-06-02",
-        "time": "18:42:26"
-    },
-    {
-        "event": "Program Manager",
-        "duration": "6 sec",
-        "date": "2025-06-02",
-        "time": "18:42:26"
-    },
-    {
-        "event": "Microsoft Edge - msedge.exe",
-        "duration": "8 sec",
-        "date": "2025-06-02",
-        "time": "18:42:26"
-    },
-    {
-        "event": "Visual Studio Code",
-        "duration": "12 sec",
-        "date": "2025-06-02",
-        "time": "18:47:35"
-    },
-    {
-        "event": "Task Switching",
-        "duration": "2 sec",
-        "date": "2025-06-02",
-        "time": "18:47:35"
-    },
-    {
-        "event": "X",
+        "event": "monitor.py - Project - Visual Studio Code",
         "duration": "4 sec",
-        "date": "2025-06-02",
-        "time": "18:47:35"
+        "date": "2025-06-04",
+        "time": "13:34:04"
     },
     {
-        "event": "Windows PowerShell",
+        "event": "data - File Explorer",
+        "duration": "2 sec",
+        "date": "2025-06-04",
+        "time": "13:34:04"
+    },
+    {
+        "event": "New Tab - Google Chrome",
+        "duration": "2 sec",
+        "date": "2025-06-04",
+        "time": "13:34:04"
+    },
+    {
+        "event": "YouTube - Google Chrome",
+        "duration": "4 sec",
+        "date": "2025-06-04",
+        "time": "13:34:04"
+    },
+    {
+        "event": "(30) YouTube - Google Chrome",
+        "duration": "10 sec",
+        "date": "2025-06-04",
+        "time": "13:34:04"
+    },
+    {
+        "event": "(30) La tactique du club le plus d\u00e9test\u00e9 d'Europe - YouTube - Google Chrome",
+        "duration": "11 min 40 sec",
+        "date": "2025-06-04",
+        "time": "13:34:04"
+    },
+    {
+        "event": "(30) FC 26 Mode Carri\u00e8re | Nouveaut\u00e9s - YouTube - Google Chrome",
         "duration": "46 sec",
-        "date": "2025-06-02",
-        "time": "18:47:35"
+        "date": "2025-06-04",
+        "time": "13:34:04"
     },
     {
-        "event": "Google Chrome - chrome.exe",
-        "duration": "14 sec",
-        "date": "2025-06-02",
-        "time": "18:47:35"
-    },
-    {
-        "event": "X - chrome.exe",
+        "event": "x.com/home - Google Chrome",
         "duration": "2 sec",
-        "date": "2025-06-02",
-        "time": "18:47:35"
+        "date": "2025-06-04",
+        "time": "13:34:04"
     },
     {
-        "event": "Visual Studio Code",
-        "duration": "18 sec",
-        "date": "2025-06-02",
-        "time": "18:48:53"
+        "event": "(1) Home / X - Google Chrome",
+        "duration": "24 sec",
+        "date": "2025-06-04",
+        "time": "13:34:04"
     },
     {
-        "event": "git_activity_log.csv - WPS Office",
-        "duration": "4 sec",
-        "date": "2025-06-02",
-        "time": "18:48:53"
-    },
-    {
-        "event": "Visual Studio Code",
-        "duration": "23 sec",
-        "date": "2025-06-02",
-        "time": "18:49:52"
-    },
-    {
-        "event": "X",
-        "duration": "8 sec",
-        "date": "2025-06-02",
-        "time": "18:49:52"
-    },
-    {
-        "event": "VLC media player",
-        "duration": "4 sec",
-        "date": "2025-06-02",
-        "time": "18:49:52"
+        "event": "(1) Hannah (@diasp8dri) / X - Google Chrome",
+        "duration": "6 sec",
+        "date": "2025-06-04",
+        "time": "13:34:04"
     }
 ]
