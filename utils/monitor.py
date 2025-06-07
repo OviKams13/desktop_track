@@ -6,6 +6,8 @@ import os
 import csv
 import json
 import win32process
+import sys
+import threading
 
 from utils.logger import save_to_csv, save_to_json
 
@@ -45,6 +47,25 @@ def track_active_window_time(duration=0, interval=2):
     app_times = {}
     last_active = None
     last_switch_time = time.time()
+
+    def auto_save_loop():
+        while True:
+            time.sleep(120)  # Save every 2 minutes
+            if app_times:
+                now = datetime.now()
+                log_data = []
+                for app_name, duration_secs in app_times.items():
+                    log_data.append({
+                        "app_name": app_name,
+                        "duration_seconds": duration_secs,
+                        "date": now.strftime("%Y-%m-%d"),
+                        "time": now.strftime("%H:%M:%S")
+                    })
+                save_to_csv(log_data)
+                save_to_json(log_data)
+                app_times.clear()
+
+    threading.Thread(target=auto_save_loop, daemon=True).start()
 
     try:
         while duration == 0 or (time.time() - start_time) < duration:
@@ -94,3 +115,22 @@ def track_active_window_time(duration=0, interval=2):
 
 def start_monitoring():
     track_active_window_time(duration=0, interval=2)
+
+def add_to_startup():
+    try:
+        import win32com.client
+        startup_path = os.path.join(os.environ["APPDATA"], "Microsoft\\Windows\\Start Menu\\Programs\\Startup")
+        shortcut_path = os.path.join(startup_path, "DesktopTracker.lnk")
+        target = sys.executable  # Path to the executable (.exe when built)
+
+        if not os.path.exists(shortcut_path):
+            shell = win32com.client.Dispatch("WScript.Shell")
+            shortcut = shell.CreateShortCut(shortcut_path)
+            shortcut.Targetpath = target
+            shortcut.WorkingDirectory = os.path.dirname(target)
+            shortcut.save()
+            print(" App added to Windows startup.")
+        else:
+            print(" App is already set to launch at startup.")
+    except Exception as e:
+        print(f" Failed to add to startup: {e}")
