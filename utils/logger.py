@@ -5,7 +5,7 @@ import os
 
 def format_duration(seconds):
     """
-    Convertit un nombre de secondes en texte lisible.
+    Converts a number of seconds into a human-readable string.
     """
     seconds = int(round(seconds))
     if seconds < 60:
@@ -20,13 +20,14 @@ def format_duration(seconds):
 
 def save_to_csv(data, filename="data/activity_log.csv"):
     """
-    Enregistre une liste de dictionnaires dans un fichier CSV en ajoutant les nouvelles entrées.
+    Saves a list of dictionaries to a CSV file by appending new entries.
     """
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     fieldnames = ["app_name", "duration", "date", "time"]  # Updated header
     file_exists = os.path.exists(filename)
     try:
-        with open(filename, mode='a', newline='', encoding='utf-8') as file:
+        with open(filename, mode='a', newline='', encoding='utf-8-sig') as file:
+
             writer = csv.DictWriter(file, fieldnames=fieldnames)
             if not file_exists:
                 writer.writeheader()
@@ -37,13 +38,13 @@ def save_to_csv(data, filename="data/activity_log.csv"):
                     "date": row["date"],
                     "time": row["time"]
                 })
-        print(f"✅ Données ajoutées à {filename}")
+        print(f" Data added to {filename}")
     except PermissionError:
-        print(f"❌ Erreur : Le fichier {filename} est déjà ouvert. Veuillez le fermer et réessayer.")
+        print(f" Error: The file {filename} is already open. Please close it and try again.")
 
 def save_to_json(data, filename="data/activity_log.json"):
     """
-    Enregistre une liste de dictionnaires dans un fichier JSON en ajoutant les nouvelles entrées.
+    Saves a list of dictionaries to a JSON file by appending new entries.
     """
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     try:
@@ -57,6 +58,6 @@ def save_to_json(data, filename="data/activity_log.json"):
         existing_data.extend(data)
         with open(filename, mode='w', encoding='utf-8') as file:
             json.dump(existing_data, file, indent=4)
-        print(f"✅ Données ajoutées à {filename}")
+        print(f" Data added to {filename}")
     except PermissionError:
-        print(f"❌ Erreur : Le fichier {filename} est déjà ouvert. Veuillez le fermer et réessayer.")
+        print(f" Error: The file {filename} is already open. Please close it and try again.")
