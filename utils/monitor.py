@@ -121,7 +121,12 @@ def add_to_startup():
         import win32com.client
         startup_path = os.path.join(os.environ["APPDATA"], "Microsoft\\Windows\\Start Menu\\Programs\\Startup")
         shortcut_path = os.path.join(startup_path, "DesktopTracker.lnk")
-        target = sys.executable  # Path to the executable (.exe when built)
+        if getattr(sys, 'frozen', False):
+            # If running as compiled .exe
+            target = sys.executable
+        else:
+            # If running as script
+            target = os.path.abspath(__file__)
 
         if not os.path.exists(shortcut_path):
             shell = win32com.client.Dispatch("WScript.Shell")
